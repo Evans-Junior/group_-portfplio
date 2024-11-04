@@ -18,5 +18,9 @@ def godfred_page():
 def elizabeth_page():
     return render_template('elizabeth.html')
 
+@app.route('/faith')
+def faith_page():
+    return render_template('FaithInusah-page.html')
+
 if __name__ == "__main__":
     app.run()
