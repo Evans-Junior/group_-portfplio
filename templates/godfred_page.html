@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godfred's Page</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/godfred.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Godfred's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <!-- Add links to other team members’ pages if available -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <div>
+            <h1>About Me</h1>
+            <p>Godfred Kogkane (Ghana) is a Management Information Systems student at Ashesi University, Ghana, set to graduate in June 2025. He has demonstrated exceptional dedication to community service as a scholar under The MasterCard Foundation Scholar Program.</p>
+            <ul class="about-info">
+                <li><strong>Name:</strong> Godfred Kogkane</li>
+                <li><strong>School:</strong> Ashesi University, Ghana</li>
+                <li><strong>Address:</strong> P.O. Box 399, Babile-Lawra, Upper West Region, Ghana</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/godfred-kogkane">linkedin.com/in/godfred-kogkane</a></li>
+                <li><strong>Email:</strong> godfredkogkane@gmail.com | godfred.kogkane@ashesi.edu.gh</li>
+                <li><strong>Phone:</strong> +233 555 879 943</li>
+            </ul>
+            <p><a href="static/Godfred_Kogkane_CV.pdf" class="btn">Download CV</a></p>
+        </div>
+
+        <section id="resume-section">
+            <h2>Education</h2>
+            <div class="resume-wrap">
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='images/Ashesi_logo.png') }}" alt="Ashesi University Logo" style="max-height: 50px;">
+                </div>
+                <div class="text">
+                    <h3>Bachelor of Science in Management Information Systems</h3>
+                    <p>2021-2025, Ashesi University, Ghana.</p>
+                </div>
+            </div>
+            <div class="resume-wrap">
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='images/Nandom_logo.png') }}" alt="Nandom Senior High School Logo" style="max-height: 50px;">
+                </div>
+                <div class="text">
+                    <h3>General Science</h3>
+                    <p>2016-2019, Nandom Senior High School, Ghana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-section">
+            <h2>Experience</h2>
+            <div class="resume-wrap">
+                <div class="text">
+                    <h3>Communications Intern</h3>
+                    <p>African Film & Arts Foundation Inc., 2024-Present, Atlanta, GA</p>
+                    <ul>
+                        <li>Generated press releases to promote initiatives and events strategically.</li>
+                        <li>Launched engaging monthly newsletters via MailChimp.</li>
+                        <li>Optimized the Foundation's LinkedIn profile.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Godfred Kogkane. All rights reserved.</p>
+    </footer>
+</body>
+</html>
