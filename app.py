@@ -22,7 +22,7 @@ def godfred_page():
 
 @app.route('/elizabeth')
 def elizabeth_page():
-    return render_template('project4.html')
+    return render_template('elizabeth.html')
 
 @app.route('/faith')
 def faith_page():
