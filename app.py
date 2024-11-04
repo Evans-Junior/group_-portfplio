@@ -2,15 +2,25 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Home route
 @app.route('/')
 def home():
-    return render_template('base.html')  # Link to the team’s landing page or index
+    return render_template('index.html')
 
-# Godfred's page route
+@app.route('/evans')
+def evans_page():
+    return render_template('evans_page.html')
+
 @app.route('/godfred')
-def godfred():
+def godfred_page():
     return render_template('godfred_page.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/elizabeth')
+def elizabeth_page():
+    return render_template('project4.html')
+
+@app.route('/faith')
+def faith_page():
+    return render_template('FaithInusah-page.html')
+
+if __name__ == "__main__":
+    app.run()

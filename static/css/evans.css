@@ -1,0 +1,248 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css?family=EB%20Garamond:700|EB%20Garamond:400');
+
+/* Base styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  flex-direction: column;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.intro-header {
+  padding: 2rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact-card {
+  display: none;
+}
+
+#contactCard {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fun-fact-section p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.projects-section h2 {
+  margin-bottom: 2rem;
+}
+
+.carousel-inner .row {
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.container {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.intro-section img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section .text-content {
+  flex: 1;
+}
+
+.intro-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Section */
+.projects-section {
+  padding: 3rem 0;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Carousel styling for multiple items */
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.carousel-item .col-md-4 {
+  flex: 1;
+  max-width: 33%;
+}
+
+.carousel-item img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Captions */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-item .col-md-4 {
+    max-width: 100%;
+  }
+}
+
+.fun-fact-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-bottom: 1.5rem; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fun-fact-text {
+  max-width: 700px;
+  font-size: 1rem; /* Smaller font size */
+  color: #333;
+}
+
+.fun-fact-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fun-fact-text p {
+  font-size: 0.9rem; /* Smaller font size */
+  line-height: 1;
+  margin: 0.5rem 0 0.5rem 3rem;
+  font-weight: 400;
+  /* width: 300px; */
+}
+
+
+.contact-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-card ul {
+  padding-left: 0;
+}
+.contact-card li {
+  margin-bottom: 10px;
+}
+.contact-card a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.d-none {
+  display: none !important;
+}
