@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Elizabeth</title>
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<style>
+    /* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background styling */
+body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    padding: 20px 40px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #7f8c8d;
+}
+
+/* Section headings */
+h2 {
+    color: #3498db;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* About section */
+.about {
+    line-height: 1.6;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Skills section */
+.skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills .skills-list span {
+    background: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Experience section */
+.experience .experience-item {
+    margin-bottom: 15px;
+}
+
+.experience h3 {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.experience p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Projects section */
+.projects p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Footer and social links */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+footer .social-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Elizabeth Agyemang" class="profile-pic">
+            <h1>Elizabeth</h1>
+            <p>Management Information Systems | Data Analyst Intern | Aspiring Product Manager</p>
+        </header>
+        
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate MIS student with a background in data analytics and software development. I have experience working on data-driven projects and building efficient dashboards for team insights. I'm continuously expanding my knowledge in CI/CD and cloud technologies to optimize processes and deliver high-quality projects.</p>
+        </section>
+        
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span>Data Analysis</span>
+                <span>Python</span>
+                <span>Project Management</span>
+                <span>UX/UI Design</span>
+                <span>HTML & CSS</span>
+            </div>
+        </section>
+        
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Sewerage Systems Ghana Ltd. – Data Analyst Intern</h3>
+                <p>Developed an Excel dashboard tracking over 1,000 data points, optimizing HR data collection and reducing manual work. Analyzed plant data to identify operational improvements, streamlining resource allocation by 25%.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Tata Data Visualization Job Simulation – Forage</h3>
+                <p>Completed data visualization exercises, preparing insights for executive decision-making. Gained experience in presenting data trends and identifying business-impacting patterns.</p>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <h2>Projects</h2>
+            <p><strong>Quantium Data Analytics Job Simulation:</strong> Used data analytics to develop insights and visualize data for enhanced decision-making.</p>
+        </section>
+        
+        <footer>
+            <p>Connect with me:</p>
+            <div class="social-links">
+                <a href="https://github.com/RookieAdventurer" target="_blank">GitHub</a>
+                <a href="mailto:elizabeth.agyemang@gmail.com">Email</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
