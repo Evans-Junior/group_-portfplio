@@ -13,7 +13,7 @@
   <h1>Our Superheroes</h1>
   <div class="card-container">
     <a href="evans" class="card">
-      <img src="hero1.jpg" alt="Hero 1">
+      <img src="{{ url_for('static', filename='images/P2.jpg') }}" alt="Hero 1">
       <div class="card-content">
         <h2>Evans Kumi</h2>
       </div>
@@ -27,7 +27,7 @@
     </a>
 
     <a href="godfred" class="card">
-      <img src="hero2.jpg" alt="Hero 2">
+      <img src="{{ url_for('static', filename='images/Godfred.png') }}" alt="Hero 2">
       <div class="card-content">
         <h2>Godfred</h2>
       </div>
