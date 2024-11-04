@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 6 Superheroes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Our Superheroes</h1>
+  <div class="card-container">
+    <a href="evans" class="card">
+      <img src="{{ url_for('static', filename='images/P2.jpg') }}" alt="Hero 1">
+      <div class="card-content">
+        <h2>Evans Kumi</h2>
+      </div>
+    </a>
+
+    <a href="faith" class="card">
+      <img src="hero3.jpg" alt="Hero 3">
+      <div class="card-content">
+        <h2>Faith</h2>
+      </div>
+    </a>
+
+    <a href="godfred" class="card">
+      <img src="{{ url_for('static', filename='images/Godfred.png') }}" alt="Hero 2">
+      <div class="card-content">
+        <h2>Godfred</h2>
+      </div>
+    </a>
+
+   
+
+    <a href="elizabeth" class="card">
+      <img src="hero4.jpg" alt="Hero 4">
+      <div class="card-content">
+        <h2>Elizabeth</h2>
+      </div>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
