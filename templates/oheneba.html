@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stephen Curry's Page</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/curry.css') }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<section class="intro-header text-center py-4 bg-primary text-white">
+			<h1>Welcome! Get to know NBA Superstar Stephen Curry</h1>
+			<button class="btn btn-outline-light mt-3" id="getContactBtn">
+				Get Contact
+			</button>
+		</section>
+
+		<section id="contactCard" class="contact-card d-none">
+			<div class="container">
+				<div class="card mt-4">
+					<div class="card-body">
+						<h5 class="card-title">Contact Information</h5>
+						<p>
+							Email:
+							<a href="mailto:stephen@example.com"
+								>stephen@example.com</a
+							>
+						</p>
+						<p>
+							Instagram:
+							<a
+								href="https://instagram.com/stephencurry30"
+								target="_blank"
+								>@stephencurry30</a
+							>
+						</p>
+						<p>
+							Twitter:
+							<a
+								href="https://twitter.com/StephenCurry30"
+								target="_blank"
+								>@StephenCurry30</a
+							>
+						</p>
+						<p>Team: Golden State Warriors</p>
+						<p>Position: Point Guard</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro-section py-5">
+			<div class="container">
+				<div class="fun-fact-section">
+					<div
+						class="container d-flex flex-row justify-content-center align-items-center text-center"
+					>
+						<img
+							src="{{ url_for('static', filename='images/curry.jpg') }}"
+							alt="Stephen Curry's Picture"
+							class="profile-image"
+						/>
+						<div class="fun-fact-text">
+							<h2>Fun Fact</h2>
+							<p>
+								Stephen Curry is known for his incredible
+								shooting ability, often making shots from well
+								beyond the three-point line. He has transformed
+								the way basketball is played at all levels.
+							</p>
+							<p>
+								Despite his success, he continually strives to
+								improve his game, proving that there’s always
+								room for growth—even for an MVP.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects-section mt-md-1 py-5 bg-light">
+			<div class="container">
+				<h2 class="text-center text-primary">Recent Highlights</h2>
+				<div
+					id="highlightCarousel"
+					class="carousel slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card">
+										<img
+											src="path_to_image1.jpg"
+											class="card-img-top"
+											alt="Highlight 1"
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												2022 NBA Championship
+											</h5>
+											<p class="card-text">
+												Leading the Warriors to another
+												championship and earning Finals
+												MVP.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card">
+										<img
+											src="path_to_image2.jpg"
+											class="card-img-top"
+											alt="Highlight 2"
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												Breaking the 3-Point Record
+											</h5>
+											<p class="card-text">
+												Surpassing Ray Allen to become
+												the NBA's all-time leader in
+												three-pointers.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card">
+										<img
+											src="path_to_image3.jpg"
+											class="card-img-top"
+											alt="Highlight 3"
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												Charity Work
+											</h5>
+											<p class="card-text">
+												Supporting underprivileged
+												communities through the Eat.
+												Learn. Play. Foundation.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#highlightCarousel"
+						data-bs-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#highlightCarousel"
+						data-bs-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script>
+			// JavaScript
+			document
+				.getElementById("getContactBtn")
+				.addEventListener("click", displayContactCard);
+
+			function displayContactCard() {
+				const contactCard = document.getElementById("contactCard");
+				contactCard.classList.toggle("d-none");
+			}
+		</script>
+	</body>
+</html>
