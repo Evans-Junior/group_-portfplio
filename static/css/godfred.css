@@ -1,0 +1,149 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Main container for each section */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1, h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #003366;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* About section */
+.about-info {
+    list-style: none;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.about-info li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Button for Download CV */
+.btn {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Resume section styles */
+#resume-section h2 {
+    margin-top: 20px;
+    color: #003366;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume-wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.resume-wrap .icon {
+    margin-right: 15px;
+}
+
+.resume-wrap .icon img {
+    max-width: 50px;
+    border-radius: 5px;
+}
+
+.resume-wrap .text {
+    max-width: 700px;
+}
+
+.resume-wrap h3 {
+    color: #333;
+}
+
+.resume-wrap p {
+    margin: 5px 0;
+}
+
+/* Skills section styles */
+#skills-section {
+    margin-top: 20px;
+}
+
+#skills-section h3 {
+    color: #003366;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
